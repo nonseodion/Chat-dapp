@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/src/style.css" rel="stylesheet"></link>
+</head>
+  <body>
+    <div class="address">
+      <button>Signin/Connect Wallet</button>
+    </div>
+    <section class="body">
+      <nav>
+        <ul>
+          <a href="/index"><li>Inbox</li></a>
+          <a href="/outbox"><li>Outbox</li></a>
+          <a class="active" href="/compose"><li>Compose</li></a>
+        </ul>
+      </nav>  
+      <section class="messages">
+        <form >
+          <div class="to">
+            <label for="to">To</label>
+            <br>
+            <input id="to">
+          </div>
+          <div class="text">
+            <br>
+            <br>
+            <label for="Text">Text</label>
+            <br>
+            <textarea id="text" rows="5" cols="30"></textarea>
+          </div>
+          <br>
+
+          <input id="send" type="button" value="Send">
+        </form>
+      </section>  
+    </section>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script type="module" src="/src/script.js"></script>
+    <script type="module" src="/src/compose.js"></script>
+  </body>
+</html>

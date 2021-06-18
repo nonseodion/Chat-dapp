@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/src/style.css" rel="stylesheet"></link>
+</head>
+  <body>
+    <div class="address">
+      <button>Signin/Connect Wallet</button>
+    </div>
+    <section class="body">
+      <nav>
+        <ul>
+          <a href="/index"><li>Inbox</li></a>
+          <a class="active" href="/outbox"><li>Outbox</li></a>
+          <a href="/compose"><li>Compose</li></a>
+        </ul>
+      </nav>  
+      <section class="messages">
+        <h3>No message sent</h3>
+      </section>  
+    </section>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script type="module" src="/src/script.js"></script>
+    <script type="module" src="src/outbox.js"></script>
+  </body>
+
+</html>
